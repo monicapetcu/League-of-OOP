@@ -1,0 +1,46 @@
+=======================================
+Petcu Monica-Alexandra
+323CA
+=======================================
+
+     Am creat 4 clase, cate una pentru fiecare erou:
+	x Pyromancer
+	x Knight
+	x Rogue
+	x Wizard
+	 
+     In fiecare clasa exista o metoda prin care returnez o litera
+  caracteristica fiecarui erou pentru a verifica pe parcursul
+  parcurgerii ce tip de erou este fiecare jucator. Alte doua
+  metode calculeaza damage-ul dat pentru fiecare tip de adversar,
+  la sfarsit verificandu-se terenul pe care se desfasoara lupta
+  pentru a se putea face modificarile damage-ului in cazul in care
+  este necesar. Clasa Rogue are o metoda in plus ce tine cont de
+  cate ori a folosit Backstab jucatorul curent.
+
+     Cele 4 clase mentionate mai sus extind clasa Hero care contine
+  nivelul, viata, experienta, locatia fiecarui jucator, verifica 
+  daca este in viata sau nu, tine cont de numarul de runde overtime 
+  in care actioneaza diverse vraji si efectueaza trecerea la
+  urmatorul nivel atunci cand este necesar.
+
+     In clasa Duel se desfasoara lupta dintre doi jucatori. In aceasta
+  clasa se verifica daca vreun jucator moare in urma unei vraji 
+  dintr-un meci trecut, iar daca nu, lupta se desfasoara. Se calculeaza,
+  apoi, damage-ul dat de fiecare, iar la final se verifica HP-ul
+  fiecaruia. In cazul in care unul din jucatori are o vraja ce are efect
+  mai multe runde, se anuleaza (daca exista) celelalte vraji sub 
+  influenta carora se afla cel atacat. Daca unul dintre jucatori moare,
+  celalalt primeste experienta. Se verifica dupa daca jucatorul ce 
+  primeste experienta trece la urmatorul nivel.
+
+    In clasa Main citesc din fisier si creez harta, apoi jucatorii.
+  Pentru fiecare runda, dupa ce jucatorii isi executa miscarea in cazul
+  in care nu sunt sub influenta unei vraji care sa ii impiedice sa faca
+  acest lucru, se verifica daca doi jucatori care sunt in viata se afla
+  in aceeasi locatie. In caz afirmativ, se desfasoara lupta dintre ei.
+  La finalul rundelor, se iau jucatorii pe rand si se verifica starea lor.
+  In cazul in care acestia sunt morti, se afiseaza "dead" in dreptul 
+  literei ce ii reprezinta caracterul. In caz contrar, se afiseaza nivelul,
+  experienta de la finalul rundelor, HP-ul final si pozitia lui pe harta.
+
